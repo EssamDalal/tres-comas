@@ -13,7 +13,7 @@
     </section>
 
     <section class="section  pt-6  has-background-success-light">
-        <h1 class="title has-text-centered">Course section</h1>
+        <h1 class="title has-text-centered">Course section</h1> {{print_r($courses)}}
         <section class="section ml-5">
             <div class="columns">
                 <div class="column">

@@ -1,6 +1,8 @@
 <?php
 
+use App\Course;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $courses = Course::all();
+    return view('home', ['courses' => $courses]);
 });
 
 
